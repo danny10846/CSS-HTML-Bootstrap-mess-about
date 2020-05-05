@@ -10,7 +10,7 @@ input, textarea {
 input[type=submit]{
     width: auto;
 }
-
+/*Styling the ID tag*/
 #theForm {
     background-color: lightgrey;
 }
@@ -30,7 +30,10 @@ ul.product-props {
 ul.product-props li{
     list-style-type: none;
 }
-
+/*Product info div with mac miller pic, by default divs are displayed in a type called block,
+    block takes as much horizontal space as possible, so we can inline-block it to make border 
+    cover our content only. Allows things to be next to each other.
+*/
 .product-info {
     border: 1px solid grey;
     display: inline-block;
@@ -40,7 +43,9 @@ ul.product-props li{
     background-color: lightgrey;
     border-radius: 5px;
 }
-
+/*Float left here allows the rest of the content within our div to be shown on the right
+    of the image.
+*/
 .product-info img {
     margin: 3px;
     width: 200px;
