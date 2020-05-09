@@ -1,15 +1,18 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Dutch Treat</title>
-    <link href="css/site.css" rel="stylesheet" />
-   
+    <title>Dutch Treat: @ViewBag.Title</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+
 </head>
 <body>
-    <h2>Dutch Treat!</h2>
+    <h2>@ViewBag.Title</h2>
     <!--Class can be identifier for multiple things, id just one-->
     <div class="product-info">
-        <img src="img/Deasip1WkAEm0m2.jpg" alt="Patrick" />
+        <img src="~/img/Deasip1WkAEm0m2.jpg" alt="Patrick" />
         <h3>Mug</h3>
         <ul class="product-props">
             <li>Price: $9.99</li>
@@ -58,7 +61,7 @@
                 <input type="password" />
             </div>
             <div>
-                <input type="checkbox"/>
+                <input type="checkbox" />
                 <label>Remember Me?</label>
             </div>
             <div>
@@ -68,8 +71,8 @@
     </div>
     <!--Script at the bottom to avoid null references in javascript code,
         scripts being read before the html etc-->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/index.js"></script>
-    
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/index.js"></script>
+
 </body>
 </html>

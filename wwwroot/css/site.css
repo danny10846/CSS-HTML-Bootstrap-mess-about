@@ -55,3 +55,27 @@ ul.product-props li{
     max-width: 200px;
 }
 
+
+#loginToggle {
+    cursor: pointer;
+}
+
+.popup-form {
+    padding: 5px;
+    border: 2px black inset;
+    display: inline-block;
+}
+.popup-form input {
+    width: 200px;
+}
+/*We change display to inline block here (default inline) as if we don't it will just
+    display the width of the text
+*/
+.popup-form label {
+    width: 150px;
+    display: inline-block;
+}
+/*Settings width to auto makes it as small as possible*/
+.popup-form input[type=checkbox], .popup-form input[type=submit]{
+    width: auto;
+}
